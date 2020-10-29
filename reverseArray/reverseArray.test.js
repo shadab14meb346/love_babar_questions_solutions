@@ -1,5 +1,8 @@
 const reverseArray = require("./reverseArray");
 
-test("adds 1 + 2 to equal 3", () => {
-	expect(reverseArray([1, 2, 3])).toEqual([3, 2, 1]);
+test("reverse of the input array", () => {
+	expect(reverseArray([1, 2, 3])).toEqual([1, 2, 3].reverse());
+	expect(reverseArray([1, 2, 3, 6, 1, 9, 4])).toEqual(
+		[1, 2, 3, 6, 1, 9, 4].reverse()
+	);
 });
